@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route, BrowserRouter } from 'react-router-dom';
+import { Switch, Route, BrowserRouter, Redirect } from 'react-router-dom';
 import Header from './Header';
 import Search from './Search';
 import Results from './Results';
@@ -24,9 +24,10 @@ class App extends Component {
           prop to the Search component */}
         <BrowserRouter>
           <Switch>
+            <Route exact path="/" render={() => <Redirect to="/react-starwars" />} />
             <Route
               exact
-              path="/"
+              path="/react-starwars"
               render={() =>
                 (<div>
                   <Header />
@@ -36,7 +37,7 @@ class App extends Component {
                     : null}
                 </div>)}
             />
-            <Route exact path="/details/:object/:object_id" component={Details} />
+            <Route exact path="/details/:object/:object_id" render={() => <Redirect to="/react-starwars/details/:object/:object_id" params={{object: }} />} />
           </Switch>
         </BrowserRouter>
       </div>

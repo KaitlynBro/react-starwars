@@ -4,7 +4,7 @@ class Results extends React.Component {
   getResultUrl(result) {
     const apiUrl = result.url; // "https://swapi.co/api/planets/1/"
     const regexMatches = apiUrl.match(/api(\/.*)/);
-    return `/details${regexMatches[1]}`; // "/details/planets/1/"
+    return `/react-starwars/details${regexMatches[1]}`; // "/react-starwars/details/planets/1/"
   }
 
   addResultHtml() {

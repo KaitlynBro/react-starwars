@@ -21,7 +21,7 @@ class Details extends React.Component {
   }
 
   goBackHome() {
-    this.props.history.push('/');
+    this.props.history.push('/react-starwars');
   }
 
   renderAttributes() {
