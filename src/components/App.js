@@ -37,7 +37,7 @@ class App extends Component {
                     : null}
                 </div>)}
             />
-            <Route exact path="/details/:object/:object_id" render={() => <Redirect to="/react-starwars/details/:object/:object_id" params={{object: }} />} />
+            <Route exact path="/react-starwars/details/:object/:object_id" component={Details} />
           </Switch>
         </BrowserRouter>
       </div>
