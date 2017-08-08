@@ -180,11 +180,17 @@ input[type=radio] {
   .queryResults li {
     list-style-type: none;
     line-height: 1.5; }
-  .queryResults ul {
-    padding: 0; }
   .queryResults a {
     color: black;
     text-decoration: none; }
+
+.resultsInfo {
+  list-style-type: none;
+  padding: 20px;
+  line-height: 1.5; }
+  .resultsInfo li {
+    display: flex;
+    font-size: 18px; }
 
 body {
   background-image: url(../../assets/starsbackground.png); }
