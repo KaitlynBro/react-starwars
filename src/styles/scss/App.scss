@@ -1,0 +1,101 @@
+@import 'partials/setup';
+@import 'partials/search';
+@import 'partials/results';
+
+//general styles
+body {
+	background-image: url(../../assets/starsbackground.png);
+}
+
+.wrapper {
+	max-width: 90%;
+}
+
+header {
+	background-image: url(../../assets/background.png);
+	background-repeat: no-repeat;
+	height: 100vh;
+	background-position: center center;
+	max-width: 100%;
+	#heading {
+		display: block;
+    	margin: 0 auto;
+    	position: relative;
+    	top: 10%;
+	}
+}
+
+h1 {
+	display: none;
+}
+
+.arrow {
+	display: inline-block;
+    margin: 0 auto;
+    margin-top: 90px;
+    position: relative;
+    top: 14%;
+    left: 50%;
+    .fa {
+    	color: #f8d731;
+    	font-size: 50px;
+    }
+}
+
+//refresh button at bottom of page
+#refresh {
+	background-color: transparent;
+    padding: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: yellow;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+	img#heading {
+		display: none;
+	}
+	h1 {
+		display: inline-block;
+		margin-top: 0;
+    	position: relative;
+    	top: 10%;
+    	left: 20%;
+	    color: white;
+	    font-size: 50px;
+	}
+	.arrow {
+		display: none;
+	}
+	//search section begins
+	#searchInputs {
+		width: 100%;
+	}
+	//making radio buttons larger for fingers to more easily press them on mobile
+	input[type=radio] {
+	    border: 1px solid black;
+	    width: 20%;
+	    height: 2em;
+	}
+	//ensuring border is on seach bar in mobile as sometimes mobile screens remove border
+	input[type=search] {
+		border: 1px solid black;
+    	border-radius: 4px;
+	}
+	button#go {
+		border: 1px solid black;
+    	border-radius: 4px;
+    	background-color: transparent;
+	}
+	//results section begins
+	#resultsContainer {
+		width: 100%;
+	}
+	.queryResults {
+		width: 100%;
+	}
+}
