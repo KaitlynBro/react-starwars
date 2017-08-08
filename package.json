@@ -1,6 +1,6 @@
 {
   "name": "star-wars",
-  "homepage": "https://kaitlynbro.github.io/starwars-react",
+  "homepage": "https://kaitlynbro.github.io/react-starwars",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
